@@ -1,0 +1,374 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segunda Aplicacion</title>
+
+<!--grupo css-->
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.5.5.min.css"/>
+<link rel="stylesheet" href="css/temasapp2.min.css"/>
+<!--grupo javaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/semana santa 11.jpg','imagenes/semana santa 8.jpg','imagenes/semana santa 10.jpg')">
+<div data-role="page" id="principal" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>SEMANA SANTA EN MEXICO </h1>
+  </div>
+  <div>
+  <center>
+    <img src="imagenes/images (5).png" width="75%" height="63%">
+  </center>
+  </div>
+  <div>
+      <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+      <li class="ui-first-child ui-last-child">
+  <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>¿QUE ES LA SEMANA SANTA?</h2>
+  <p>Se muestra que es</p>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+ <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>¿QUE RELIGIONES LO CELEBRAN?</h2>
+  <p>Se muestra las religiones que celebran la semana santa</p>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>LA SEMANA SANTA EN ATLIXCO</h2>
+  <p>Muestra la semana santa en atlixco</p>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+      <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>CELEBRACION EN EL ESTADO DE PUEBLA</h2>
+      <p>Muestra la celebracion en el estado de puebla </p>
+      </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+     <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>CELEBRACION EN EL ESTADO DE IZTAPALAPA</h2>
+     <p>Muestra la celebracion en el estado de iztapalapa</p>
+     </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+     <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>CELEBRACION EN EL ESTADO DE SAN LUIS POTOSI</h2>
+     <p>Muestra la celebracion en el estado de san luis potosi</p>
+     </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+     <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>CELEBRACION EN EL ESTADO DE GUERRERO</h2>
+     <p>Muestra la celebracion en el estado de guerrero</p>
+     </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+     <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>CELEBRACION EN EL ESTADO DE OAXACA</h2>
+     <p>Muestra la celebracion en el estado de oaxaca</p>
+     </a>
+     </li>
+  </ul>
+</div>
+<div data-role="footer" align="center" data-theme="a">
+  <div>
+    <img src="imagenes/persona_rosa.png" width="46" height="46">
+  </div>
+  <div>
+    <h4>Aplicacion Dos</h4>
+    <h4>NANCY ARACELI PAREDES MANZANARES</h4>
+  </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>¿QUE ES LA SEMANA SANTA?</h1>
+  </div>
+  <div data-role="content" align="center">
+   <div>
+     <p>La Semana Santa tiene lugar después de la Cuaresma, el ciclo de cuarenta días que abarca desde el Miércoles de Ceniza -entre el 4 de febrero y el 10 de marzo- hasta el Jueves Santo. Concretamente, la celebración comienza el Domingo de Ramos y finaliza el Sábado Santo, aunque en algunos lugares se adelanta al viernes anterior (el de Dolores) y se prolonga hasta el Domingo de Resurrección. Los cristianos conmemoran durante la Semana Santa la pasión, muerte y resurrección de Jesús de Nazaret. Según cuenta la Biblia, Jesús, Cristo o Jesucristo, el hijo de Dios, ofreció su vida para pagar por los pecados del mundo, impartiendo con ello una lección que cada año se recuerda en numerosos países. La Semana Santa constituye en sí misma un gran acontecimiento, un fenómeno cultural, sociológico y, sobre todo, religioso. Una suma de emociones fundamentadas en la fe y escenificadas con misas solemnes, procesiones multitudinarias y otros actos destacados. Es tiempo de pasos y cofradías, de oraciones, de saetas, de capirotes, de olor a cirio,… Muy espectaculares son las procesiones vivientes que se celebran estos días. Personas ataviadas para la ocasión representan por calles y plazas los postreros momentos de la vida de Jesús. Guardias romanos, penitentes, fervor popular y crucifixión. .</p>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','imagenes/semana santa 11.jpg',1)"><img src="imagenes/357x247-semanasanta.356.247.png" width="281" height="179" id="Image19"></a>
+     <p>Semana Santa</strong>, conocida como semana mayor, es un período de 7 días que comienza con el Domingo de Ramos y culmina con el Domingo de Resurrección. Con la Semana Santa,<strong> el cristiano conmemora el Triduo Pascual, es decir, los momentos de la Pasión, la Muerte y la Resurrección de Jesucristo.</strong></p>
+ 	 <div id="ad-content"></div>
+ 	 <p>La Semana Santa está precedida por la Cuaresma que se refiere al tiempo de preparación donde se recuerda los 40 días de Jesucristo en el desierto. <strong>Las celebraciones centrales de la Semana Santa son: </strong>Jueves Santo, Viernes Santo, Sábado Santo y Domingo de Resurrección.</p>
+ 	 <p><strong>La Semana Santa</strong>, es el tiempo para dedicarse a la oración y reflexionar en Jesucristo, en los momentos del Triduo Pascual, quien con su infinita misericordia, decide tomar el lugar del hombre y recibir el castigo para liberarlo de los pecados. Asimismo, es el tiempo ideal para el ser humano meditar sobre sus acciones y los cambios que debe realizar para acercarse más a Dios y cumplir con sus mandamientos.</p>
+ 	 <p>Durante la Semana Santa, el católico cumple con diversos actos, como: procesiones, escenificación del drama de la muerte y pasión de Cristo. Los penitentes se someten a duras cargas como símbolo de su auto sacrificio y, en el día Viernes Santo, los fieles deben de guardar ayuno y abstenerse de comer carne.</p>
+     <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','imagenes/semana santa 10.jpg',1)"><img src="imagenes/images (2).png" width="299" height="168" id="Image"></a></p>
+   </div>
+  </div>
+  <div data-role="footer" data-theme="a">
+  <h4>NANCY ARACELI PAREDES MANZANARES</h4>
+  </div>
+</div>
+</div>
+ 
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>¿QUE RELIGIONES LO CELEBRAN?</h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <h2>CATOLICOS</h2></div>
+      <P>En el catolicismo la Semana Santa, se inicia con el Domingo de Ramos, donde se bendicen las palmas, luego durante la semana se realizan misas y confesiones, el Jueves Santo se celebra la Misa Crismal, más tarde la celebración de la Cena del Señor, y concluye con la adoración al Santísimo Sacramento. El Viernes Santo, se lleva adelante el Sermón de las Tres Horas, más tarde la Celebración de la Pasión de Señor, concluyendo con la procesión del Santo Sepulcro. Mientras que el Sábado Santo se realiza la Solemne Vigilia Pascual y el domingo la Misa de Pascua de Resurreción.</P>
+      <img src="imagenes/CATOLICOS.png" width="81%" height="54%"> 
+      <p> La Semana Santa es el momento litúrgico más intenso de todo el año. Sin embargo, para muchos católicos se ha convertido sólo en una ocasión de descanso y diversión. Se olvidan de lo esencial: esta semana la debemos dedicar a la oración y la reflexión en los misterios de la Pasión y Muerte de Jesús para aprovechar todas las gracias que esto nos trae. Para vivir la Semana Santa, debemos darle a Dios el primer lugar y participar en toda la riqueza de las celebraciones propias de este tiempo litúrgico. A la Semana Santa se le llamaba en un principio “La Gran Semana”. Ahora se le llama Semana Santa o Semana Mayor y a sus días se les dice días santos. Esta semana comienza con el Domingo de Ramos y termina con el Domingo de Pascua. Vivir la Semana Santa es acompañar a Jesús con nuestra oración, sacrificios y el arrepentimiento de nuestros pecados. Asistir al Sacramento de la Penitencia en estos días para morir al pecado y resucitar con Cristo el día de Pascua. Lo importante de este tiempo no es el recordar con tristeza lo que Cristo padeció, sino entender por qué murió y resucitó. Es celebrar y revivir su entrega a la muerte por amor a nosotros y el poder de su Resurrección, que es primicia de la nuestra. La Semana Santa fue la última semana de Cristo en la tierra. Su Resurrección nos recuerda que los hombres fuimos creados para vivir eternamente junto a Dios. Domingo de Ramos Celebramos la entrada triunfal de Jesús a Jerusalén en la que todo el pueblo lo alaba como rey con cantos y palmas. Por esto, nosotros llevamos nuestras palmas a la Iglesia para que las bendigan ese día y participamos en la misa. Jueves Santo Este día recordamos la Última Cena de Jesús con sus apóstoles en la que les lavó los pies dándonos un ejemplo de servicialidad. En la Última Cena, Jesús se quedó con nosotros en el pan y en el vino, nos dejó su cuerpo y su sangre. Es el jueves santo cuando instituyó la Eucaristía y el Sacerdocio. Al terminar la última cena, Jesús se fue a orar, al Huerto de los Olivos. Ahí pasó toda la noche y después de mucho tiempo de oración, llegaron a aprehenderlo. Viernes Santo Ese día recordamos la Pasión de Nuestro Señor: Su prisión, los interrogatorios de Herodes y Pilato; la flagelación, la coronación de espinas y la crucifixión. Lo conmemoramos con un Via Crucis solemne y con la ceremonia de la Adoración de la Cruz. Sábado Santo o Sábado de Gloria Se recuerda el día que pasó entre la muerte y la Resurrección de Jesús. Es un día de luto y tristeza pues no tenemos a Jesús entre nosotros. Las imágenes se cubren y los sagrarios están abiertos. Por la noche se lleva a cabo una vigilia pascual para celebrar la Resurrección de Jesús. Vigilia quiere decir “ la tarde y noche anteriores a una fiesta.”. En esta celebración se acostumbra bendecir el agua y encender las velas en señal de la Resurrección de Cristo, la gran fiesta de los católicos. Domingo de Resurrección o Domingo de Pascua Es el día más importante y más alegre para todos nosotros, los católicos, ya que Jesús venció a la muerte y nos dio la vida. Esto quiere decir que Cristo nos da la oportunidad de salvarnos, de entrar al Cielo y vivir siempre felices en compañía de Dios. Pascua es el paso de la muerte a la vida.</p>
+      <H2>CRISTIANOS EVANGELICOS</H2>
+      <P>La otra parte en la iglesia Cristiano Evangélico, se cree que estas fiestas son paganas, ya que con el tiempo se fueron “Cristianizando”; sin embargo el hecho de celebrar Semana Santa, en forma voluntaria, es parte de la libertad que Cristo da.
+En esta fecha los evangélicos adoran al Señor y para evangelizar, realizan oraciones, celebran la cena del Señor, entonan himnos; en domingo de resurrección recuerdan la victoria del Señor sobre la muerte.
+En fin, todas la religiones cristianas celebran la Semana Santa y afianzan su fe en Cristo, pero entre todas resaltan los católicos por la forma cómo recuerdan esta fecha; la vía crucis y la misma crucifixión de Cristo son las enormes muestras de que la humanidad aún no perdido el amor a Dios.</P>
+  <img src="imagenes/CRISTIANOS.png" width="50%" height="50%"> 
+  <p>Para los miembros de la iglesia cristiana evangélica, la Semana Santa es el tiempo para recordar la muerte de Cristo. Para conmemorarla, se congregan en una jornada de oración y adoración, la cual inicia el Jueves Santo a las 9:00 de la noche y se extiende por 24 horas. 
+En esta reunión se dan cita grupos artísticos y musicales, ya que los cristianos creen que “Dios habita en medio de la alabanza”. Además, para ellos es fundamental la vigilia, es decir, pasar una noche en vela y adorando a Dios. 
+Con panderos, música y cantos, recuerdan la muerte de Jesucristo. La jornada de adoración comienza el jueves en la noche y termina el viernes. En estas 24 horas, la comunidad cristiana ora por los enfermos y por las necesidades de cada una de las personas que habitan en este mundo. 
+Frente a la resurrección de Jesucristo, los cristianos manifiestan que este hecho aún no ha sido confirmado; sin embargo, el domingo, día en que los católicos celebran la resurrección, ellos llevan a cabo una reunión de exaltación. 
+En cuanto a la comida y la vestimenta, esta comunidad no tiene restricción a la hora de ingerir carnes rojas, ni de lucir determinados atuendos. 
+Nelson González, pastor de la Iglesia Cristiana Filadelfia, señala que esta doctrina comparte las mismas creencias que La Asamblea de Dios, Cuadrangular, Presbiteriana, Casa Sobre la Roca, entre otras congregaciones. 
+En lo que respecta a la Semana Santa, indica que conmemoran la muerte del Señor Jesucristo a través de la reflexión individual, para tal fin los días jueves, viernes y domingo tienen encuentros personales. </p>
+  <h2>TESTIGOS DE JEHOVA</h2>
+  <P>Las procesiones son de los actos religiosos que mayor número de seguidores congrega en Semana Santa. 
+La Semana Mayor para los católicos es la época en la que se recuerda y celebra los hechos más relevantes en la vida de Jesús de Nazaret (la Pasión, Muerte y Resurrección), comenzando con el llamado Domingo de Ramos y finalizando el Domingo de Resurrección o también llamado de Pascua. 
+Otras religiones, por su parte, consideran que estos días no son el único momento para adorar a Dios. Si bien es cierto que aprovechan la semana para remembrar la pasión de Cristo, lo hacen por medio de otro tipo de actividades. Aunque, en general, consideran que a pesar de sus diferencias de doctrina, el mensaje de Jesús es claro: Vivir en paz, porque una religión sin paz y amor es una iglesia estéril. 
+Los Testigos de Jehová consideran que la Semana Mayor es una fecha común; ellos celebran anualmente la muerte de Jesús, pero lo hacen según el calendario arameo. En dicha reunión comparten vino y pan, tal como lo hizo el Señor en la última cena. 
+“Nosotros celebramos la muerte de Jesús con una cena, cada año la fecha puede variar dependiendo del calendario arameo. 
+</P>
+     <img src="imagenes/TESTIGOS.png" width="50%" height="50%">
+<p>“Durante la Semana Santa que llaman los católicos, los Testigos de Jehová comemos normalmente, ya que consideramos que esos son días común y corriente. A parte de ellos no creemos en santos ni imágenes”, comentó una feligrés Testigo de Jehová.</p> 
+ </div>
+ <div data-role="footer" data-theme="a">
+       <h4>NANCY ARACELI PAREDES MANZANARES</h4>
+  </div>
+</div>
+</div>
+
+ <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>LA SEMANA SANTA EN ATLIXCO</h1>
+ </div>
+ <div data-role="content" align="center">
+   <div>
+      <p>Los engrillados son hombres que para pagar una penitencia o agradecer un milagro, recorren más de 3 kilómetros de calles del municipio, en su camino deben ir descalzos, cargando en sus hombros cadenas de más de 100 kilos, con espinas incrustadas en su cuerpo, vistiendo únicamente una capucha y un calzoncilllo negros.</p>
+      <img src="imagenes/semana sant.png" width="50%" height="50%">
+      <p>Otro de los atractivos del municipio de Atlixco durante Semana Santa es la procesión del silencio, que se realizará el próximo viernes santo, y que se ha llevado a cabo desde hace 20 años.</p>
+      <img src="imagenes/semana santa 2.jpg" width="50%" height="50%">
+      <p>El recorrido, que iniciará en la junta auxiliar de Santa Lucía Cosamaloapan y culminará en la comunidad de Nexatengo, tendrá una duración de aproximadamente 3 horas, tiempo en el que participarán aproximadamente 30 mil personas.</p>
+      <img src="imagenes/semana santa.jpg" width="50%" height="50%">
+      <p> Quienes este año han decidido cargar las imágenes es importantes deberán haberse confesado, los hombres deberán ir vestidos de negro y las mujeres con falda morada y blusa blanca.</p>
+        <img src="imagenes/semana santa 9.png" width="50%" height="50%">
+        <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+  <h1>TAPETE FLORAL</h1>
+  <div>
+  <p>Esta es algunas de las alfombras:
+  <P> Este tapete está conformado por cuatro escenas. La primera representa los íconos del municipio como son: el aguacate el volcán, el agua y las flores; en segundo plano se  aprecia un colibrí, que representa la primavera; seguido del astro rey, el sol, así como un mosaico de talavera; y por último el viacrucis representado por tres cruces.</P>
+  <P><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','imagenes/semana santa 8.png',1)"><img src="imagenes/semana santa 7.jpg" width="540" height="720" id="Image18"></a></P>
+  <br>
+  </div>
+  <div></div>
+  </div>
+  </div>
+    </div>
+ </div>
+ <div data-role="footer" data-theme="a">
+    <h4>NANCY ARACELI PAREDES MANZANARES</h4>
+   </div>
+</div>
+</div>
+
+ <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>CELEBRACION EN EL ESTADO DE PUEBLA</h1>
+ </div>
+ <div data-role="content" align="center">
+    <div>
+      <p>La Procesión de Viernes Santo, tiene como objetivo ser un encuentro de reflexión y renovación espiritual con el Señor, en su veinticinco edición, las cinco imágenes que recorren las principales calles del Centro Histórico de Puebla son consideradas entre las más representativas de Puebla, simbolizan este acontecimiento solemne de Fe, donde se contemplan con devoción la pasión y muerte de Jesucristo.
+
+Esta tradición piadosa rescatada desde el año 1991 en Puebla, representa el caminar de Jesús, donde las imágenes más antiguas y con mayor número de devotos salen a recorrer las calles de Puebla, escenificando los misterios de la redención, culminando en punto de las tres de la tarde en la Catedral, para recordar la muerte de Jesucristo.
+
+Desde el inicio de esta nueva etapa se decidió que únicamente cinco imágenes fueran cargadas en el cortejo, dos de la Virgen María y tres de Jesucristo. Las dos marianas aluden al momento dramático, pues son la Virgen Dolorosa y la Virgen de la Soledad y las otras de Jesús cargando la cruz a cuestas.
+
+Las imágenes que recorrerán la procesión son las siguientes:
+
+La Virgen Dolorosa del Carmen
+
+Obra quizá del siglo XVIII (atribuida a José Villegas Cora) muestra la calidad de los imagineros poblanos de esa época, como las facciones y expresiones adecuadas. Se encuentra en la capilla de Santa Teresa del Templo del Carmen.
+
+virgen de dolores
+La Virgen Dolorosa del Carmen
+Nuestra Señora de la Soledad
+
+Es de factura sevillana de finales del siglo XVII. Desde su arribo despertó gran devoción al grado de que dio origen a su magnífico templo y al convento anexo de religiosas Carmelitas descalzas.
+
+Nuestra Señora de la Soledad
+Nuestra Señora de la Soledad
+Jesús de las Tres Caídas
+
+Se venera en el Templo de Analco y la leyenda afirma que cuando estaba siendo tallada, el escultor no permitía ninguna presencia, salvo un ciego. Cuando estaba concluida el ciego le pidió al maestro tocar el rostro de la imagen, recuperando la vista de inmediato. El milagro la hizo de una gran popularidad y devoción.
+
+Jesús de las Tres Caídas
+Jesús de las Tres Caídas
+Jesús Nazareno de San José
+
+Es una imagen de finales del siglo XVI. Su escultor Jerónimo Rodríguez fue aprehendido por la inquisición, logrando que su imagen fuera al Tempo de San Pedro, donde empezó su veneración. Las autoridades decidieron trasladarlo a la parroquia de San José, donde dio lugar a la Cofradía de Nazarenos, que es la más antigua de la ciudad. La devoción dio lugar a la construcción de una suntuosa capilla y a un culto que perdura hasta nuestros días.
+
+procesiones1_0
+Jesús Nazareno de San José
+Señor de las Maravillas
+
+Es hoy quizá, la imagen más venerada de la ciudad. Las religiosas agustinas de Santa Mónica la ganaron en una rifa. Una novicia descubrió que durante la noche, la imagen era azotada por dos soldados romanos que formaban parte del “paso”. El suceso causó conmoción y dio lugar a la gran veneración. Su nombre proviene de las maravillas que su devoción ha logrado.
+
+Señor de las maravilla
+Señor de las Maravillas
+Recorrido
+
+.</p>
+      <img src="imagenes/puebla.png" width="50%" height="50%">
+      <p>Encuentro de las imágenes en el atrio de la Catedral (10:30 a 11:30hrs).
+
+Salida de la Catedral (12:00 hrs.)
+
+Previo primer mensaje arzobispal, toma la calle 16 de septiembre hasta el Zócalo para dar vuelta al oriente por la Avenida Juan de Palafox y Mendoza, da vuelta hacia la avenida 2 norte hasta la 4 oriente, para tomar en sentido contrario, hasta la 11 norte y llegar al “Gallito” ( 11 sur y Reforma).
+
+Después del segundo mensaje del Sr. Arzobispo, continúa por la calle Reforma hasta el Zócalo y por la 16 de septiembre al atrio de la Catedral, arribando alrededor de las 15:00hrs, donde se da la bendición y concesión de indulgencia plenaria. Posteriormente, las imágenes regresan a su templo.</p>
+    </div>
+  </div>
+ <div data-role="footer" data-theme="a">
+     <h4>NANCY ARACELI PAREDES MANZANARES</h4>
+   </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+        <h1>CELEBRACION EN IZTAPALAPA</h1>
+ </div>
+ <div data-role="content" align="center">
+   <div>
+     <P>En muchas ciudades de todo el mundo, cada año se lleva a cabo la representación del Vía Crucis y en nuestro país, en todo el territorio nacional las principales calles de las localidades son escenarios de la conmemoración de la Semana Santa. Entre las representaciones de la Pasión de Cristo que se realizan en México, sin duda la más añeja, llena de fervor y tradición es la que se lleva a cabo en el Cerro de la Estrella, en la delegación Iztapalapa, durante la Semana Mayor.
+
+Los Festejos de Semana Santa de Iztapalapa son Patrimonio Cultural Intangible de la Ciudad de México. Desde hace 172 años, millones de mexicanos y turistas extranjeros han rememorado en el Cerro de la Estrella de Iztapalapa, la pasión de Cristo, la historia de cómo el hijo de Dios sufrió por el perdón de los pecados de la humanidad.
+
+Desde 1843 en el Cerro de la Estrella o Huizachtepetl se conmemora la Pasión de Cristo. Diez años atrás, en 1833, los pobladores afectados y preocupados por la epidemia que azolaba a su comunidad, invocaron las imágenes de Cristo que se  veneraban en sus respectivas ermitas de los barrios originales de Iztapalapa para que terminara la ola de muerte que se cernía entre sus familiares.
+
+La conmemoración de Semana Santa en Iztapalapa, ha sido tan importantes que en 1867 don Benito Juárez protegió la escenificación.
+</P></div>
+     <img src="imagenes/iztapalapa.jpg" width="50%" height="50%">
+     <p>Para representar a Jesucristo los candidatos deben tener los atributos físicos necesarios para resistir el traslado durante toda la representación que inicia con el Domingo de Ramos. Pero sobretodo, el trayecto del Viernes Santo cuando es condenado llevando a cuestas la cruz de madera que pesa aproximadamente 90 kilos (tal como lo estipulaba el código penal romano de aquella época) y soportando además caídas y golpes de los soldados romanos.
+
+La representación del Vía Crucis en Iztapalapa comienza con el Domingo de Ramos, con la bendición de las Palmas en la Parroquia de San Lucas, y la Entrada Triunfal de Jesús de Nazaret a Jerusalén, en el santuario del Señor de la Cuevita. El jueves Santo: se celebra la procesión por las principales calles emulando la visita a las Siete Casas, que en este caso es a los ocho barrios; la última cena; el lavatorio en el Jardín Cuitláhuac; la Oración en el Huerto de los Olivos y la Aprehensión, en el Cerro de la Estrella. El Viernes Santo día de la Tragedia Litúrgica: El Juicio: Presentación del Nazareno ante Poncio Pilatos; los clarines anuncian que El Redentor ha sido condenado: Azotes y Coronación se escenifican en la explanada del Jardín Cuitláhuac.
+
+Acto seguido, inicia el Vía Crucis rumbo al Gólgota (Cerro de la Estrella): en este trayecto se representan las tres caídas, la primera en la calle de Ayuntamiento (calle de Cuauhtémoc) las otras dos en la Calle de Hidalgo y Estrella, se escenifican los demás pasos al Calvario. Cientos de Nazarenos que también llevan a cuestas su cruz y corona de espinas, centuriones, soldados romanos y heraldos abren paso al Mecías acompañado por sus discípulos, vírgenes y samaritanos; detrás los clarines y una banda tocan la Marcha Dragona. Crucifixión con los villanos Dimas y Gestas, la presencia de Judas en la horca; a las tres de la tarde, da fin esta representación de la Pasión y muerte del Hijo del Hombre en el Cerro de la Estrella en Iztapalapa.
+</p>
+ </div>
+ <div data-role="footer" data-theme="a">
+    <h4>NANCY ARACELI PAREDES MANZANARES</h4>
+  </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>CELEBRACION EN EL ESTADO DE SAN LUIS POTOSI</h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <P>En todo San Luis Potosí se organizan un buen número de eventos culturales y religiosos para conmemorar la Semana Santa, desde turismo religioso y cultural, como el espectáculo de la Fiesta de la Luz, museos e iglesias, hasta turismo de aventura. Sin embargo, el evento más importante y de mayor tradición entre los lugareños tiene lugar el Viernes Santo, cuando se realiza la Procesión del Silencio, una de las más arraigadas debido a su solemnidad y misticismo. No importa que no seas católico, ven a vivir una experiencia digna de recordar en la que mientras más cosas sucedan, más querrás conocer el origen y significado de lo que estás presenciando.</P>
+           <img src="imagenes/san luis potosi.jpg" width="50%" height="50%">
+           <p>Desde ya casi 60 años, alrededor de dos mil personas de 28 diferentes cofradías (asociaciones de fieles católicos) se reúnen el Viernes Santo para acompañar esta procesión durante la cual portan emblemas, imágenes religiosas referentes al Vía Crucis y visten los colores distintivos de su compañía. Cada una de las “Cofradías” lleva una imagen representativa del Vía Crucis (camino a la cruz) de Jesucristo y de los misterios del Santo Rosario.
+
+La procesión inicia al anochecer, justo a las 20 horas, cuando una multitud sale a las calles en completo silencio guardando luto por la Pasión y Muerte de Cristo, según la tradición católica. La Plaza del Carmen es el punto de reunión de las “Cofradías” e inicio donde las tropas tocan sus clarines decretando el inicio del evento y ordenando así un silencio sepulcral. La iluminación de las calles baja para dar paso a los cirios que portan los fieles y que dan a la procesión un carácter de mayor dramatismo</p>
+    </div>
+ </div>
+ <div data-role="footer" data-theme="a">
+       <h4>NANCY ARACELI PAREDES MANZANARES</h4>
+  </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>CELEBRACION EN EL ESTADO DE GUERRERO</h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <P>Durante toda una semana, en las calles de este Pueblo Mágico guerrerense se llevan a cabo procesiones en las cuales sus habitantes dan muestra de su fe a través de sacrificios simbólicos, y hasta físicos, para expiar alguna culpa o simplemente para ofrendar su sufrimiento a quien consideran su salvador. Por las calles empedradas desfilan las dramáticas procesiones acompañadas por imágenes religiosas que testifican el sacrificio de penitentes encapuchados, vestidos de negro que arrastran cadenas sujetas a sus tobillos a manera de sacrificio</P>
+       <img src="imagenes/guerrero.jpg" width="50%" height="50%">
+       <p>El inicio de esta tradición data de mediados del siglo XVI y ha perdurado hasta nuestros días celebrándose cada año, según lo marque el calendario católico, en el mes de marzo o abril. Esta celebración comienza el Domingo de Ramos cuando se conmemora la entrada triunfal de Jesús a Jerusalén. Este día los feligreses salen a las calles con palmas y ramos de laurel adornados para ser bendecidas por un cura católico.
+
+A partir del Lunes Santo se realizan una serie de procesiones nocturnas en las cuales los fieles marchan solemnes y silenciosos al compás de los tambores, portando velas que se derriten en sus manos siguiendo la ruta de los templos de la Santísima Trinidad, Santa Veracruz, el exconvento de San Bernardino de Siena, la parroquia de Santa Prisca y San Sebastián.</p>
+    </div>
+ </div>
+ <div data-role="footer" data-theme="a">
+       <h4>NANCY ARACELI PAREDES MANZANARES</h4>
+  </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>CELEBRACION EN EL ESTADO DE OAXACA</h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <P>Dentro de la gama de festejos religiosos para los Oaxaqueños la cuaresma y la Semana Santa reviste gran significado.
+
+El Primer Viernes de Cuaresma la Festividad del Señor de Las Misericordias en el Templo de San Juan de Dios, el Segundo Viernes de Cuaresma la Festividad del Señor de Las Maravillas en el Templo de La Defensa , el Cuarto Viernes de Cuaresma la Festividad de la Samaritana en la Ciudad de Oaxaca, el Quinto Viernes de Cuaresma la festividad del Señor de las Peñas en el Templo del Carmen Alto y la Festividad del Señor San Lázaro en la Villa de San Antonino Castillo Velasco.
+
+El Sexto Viernes de Cuaresma, es el viernes de Dolores, una tradición de gran devoción en donde se rinde culto a la madre de Dios, colocando el Altar de la Virgen de Dolores, llegando así a la Semana Santa, la cual inicia para los Oaxaqueños con el Domingo de ramos, rememorando la entrada de Jesús en Jerusalen y la Festividad del Señor del Burrito en la Población de San Antonino Castillo Velasco.</P>
+       <img src="imagenes/oaxaca.jpg" width="50%" height="50%">
+       <p>En el Estado de Oaxaca la Semana Santa muestra tintes diversos: desde el respeto y solemnidad con que los oaxaqueños acuden a los templos a tomar ceniza y el recogimiento con el que los católicos manifiestan su luto durante esta semana, hasta la alegría de los “Viernes del Llano” que los jóvenes, celebran en la ciudad capital, llenos de entusiasmo; o la colorida generosidad del “Día de la Samaritana”, con el obsequio de aguas frescas en templos, escuelas, oficinas, negocios, etc.
+
+Aunado a este espíritu de festividad, es la hospitalidad oaxaqueña y la impresionante belleza del litoral, lo que convierte a la Costa de Oaxaca en una de las mejores opciones de viaje durante la Semana Santa: sol, vegetación exuberante, hermosas playas de tonos celestes, cálidas y transparentes.</p>
+<div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+  <h1>SEMANA SANTA EN OAXACA</h1>
+  <div>
+  <p>Esta es una imagen :
+  <p>En la región del Istmo de Tehuantepec, Oaxaca cuenta con una gran cantidad de tradiciones religiosas durante la época de la Semana Mayor que se llevan a cabo en los barrios de Santo Domingo Tehuantepec, Juchitán, Salina Cruz, Ixtaltepec, Ixtepec, San Blas Atempa, etc</p>
+  <br>
+  </div>
+  <div>
+  <img src="imagenes/oaxaca2.jpg" width="50%" height="50%"> </div>
+  </div>
+  </div>
+    </div>
+ </div>
+ <div data-role="footer" data-theme="a">
+       <h4>NANCY ARACELI PAREDES MANZANARES</h4>
+  </div>
+</div>
+</div>
+
+</body>
+</html>
